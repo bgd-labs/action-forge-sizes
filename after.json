@@ -5,12 +5,6 @@
         "runtime_margin": 21083,
         "init_margin": 45044
     },
-    "ATokenInstance": {
-        "runtime_size": 10162,
-        "init_size": 11059,
-        "runtime_margin": 14414,
-        "init_margin": 38093
-    },
     "ATokenMock": {
         "runtime_size": 803,
         "init_size": 967,

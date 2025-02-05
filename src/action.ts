@@ -9,15 +9,18 @@ const reportPath = getInput("report-path");
 const octokit = getOctokit(getInput("token"));
 const shouldComment = getInput("comment") === "true";
 
-const key = `<-- ${encodeURIComponent(heading)} -->`;
+const key = `<!-- ${encodeURIComponent(heading)} -->`;
 
 const createOrUpdateComment = async (body: string) => {
+  body = `${body}\n\n${key}`;
   const { data: comments } = await octokit.rest.issues.listComments({
     ...context.repo,
     issue_number: context.issue.number,
   });
+  console.log("comments", comments);
 
-  const comment = comments.find((comment) => comment.body_text?.includes(key));
+  const comment = comments.find((comment) => comment.body?.includes(key));
+  console.log("comment", comment);
 
   if (comment) {
     await octokit.rest.issues.updateComment({
