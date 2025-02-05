@@ -33,7 +33,7 @@
         "runtime_size": 7396,
         "init_size": 8988,
         "runtime_margin": 17180,
-        "init_margin": 40164
+        "init_margin": -40164
     },
     "AaveV3DefaultRateStrategyProcedure": {
         "runtime_size": 21,
@@ -74,7 +74,7 @@
     "AaveV3HelpersBatchTwo": {
         "runtime_size": 229,
         "init_size": 31387,
-        "runtime_margin": 24347,
+        "runtime_margin": -24347,
         "init_margin": 17765
     },
     "AaveV3HelpersProcedureOne": {

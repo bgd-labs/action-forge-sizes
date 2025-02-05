@@ -1,12 +1,8 @@
+import type { Report } from "./action";
 import { compareObjects } from "./compareObjects";
 import md, { formatNumber } from "./md";
 
-type FileReport = {
-  runtime_size: number;
-  init_size: number;
-  runtime_margin: number;
-  init_margin: number;
-};
+type FileReport = Report[string];
 type Verdict = Record<keyof FileReport | "key", string | number>;
 type Snapshot = Record<string, FileReport>;
 
@@ -32,7 +28,9 @@ export function snapshotDiff({
 
   compareObjects(before, after, {
     onAdded: (key, _before, after) => {
-      added.push(md.formatLine(verdictToArray({ key: `**${key}**`, ...after })));
+      added.push(
+        md.formatLine(verdictToArray({ key: `**${key}**`, ...after })),
+      );
     },
     onChanged: (key, before, after) => {
       const verdict = Object.keys(after ?? {}).reduce<Verdict>(
@@ -46,11 +44,10 @@ export function snapshotDiff({
               Number(before_value) < Number(after_value) ? "↑" : "↓";
             const diffSign =
               Number(before_value) < Number(after_value) ? "+" : "-";
-            acc[
-              k as keyof FileReport
-            ] = `<sup>${diffSym}${diffPercentage}% (${diffSign}${diff})</sup> ${formatNumber(
-              after_value
-            )}`;
+            acc[k as keyof FileReport] =
+              `<sup>${diffSym}${diffPercentage}% (${diffSign}${diff})</sup> ${formatNumber(
+                after_value,
+              )}`;
           }
 
           return acc;
@@ -58,13 +55,13 @@ export function snapshotDiff({
         {
           ...after,
           key,
-        }
+        },
       );
       changed.push(md.formatLine(verdictToArray(verdict)));
     },
     onRemoved: (key, before, _after) => {
       removed.push(
-        md.formatLine(verdictToArray({ key: `~${key}~`, ...before }))
+        md.formatLine(verdictToArray({ key: `~${key}~`, ...before })),
       );
     },
     onUnchanged: (key, before, _after) => {
@@ -82,7 +79,7 @@ export function snapshotDiff({
 
 export const formatDiffMd = (
   heading: string,
-  diff: ReturnType<typeof snapshotDiff>
+  diff: ReturnType<typeof snapshotDiff>,
 ) => {
   const br = "";
   const th = md.th([
@@ -91,16 +88,14 @@ export const formatDiffMd = (
     "Initcode Size (B)",
     "Runtime Margin (B)",
     "Initcode Margin (B)",
-  ])
-  const hr = md.hr(Array.from({ length: 5 }, (_, index) => ({
-    dir: index === 0 ? "left" : "right",
-  })));
+  ]);
+  const hr = md.hr(
+    Array.from({ length: 5 }, (_, index) => ({
+      dir: index === 0 ? "left" : "right",
+    })),
+  );
 
-  const changedLinesHeader: string[] = [
-    th,
-    hr,
-  ];
-  let changedLines: string[] = [];
+  const changedLinesHeader: string[] = [th, hr];
   const unchangedLinesHeader: string[] = [
     br,
     "<details><summary>🔕 Unchanged</summary>",
@@ -108,7 +103,6 @@ export const formatDiffMd = (
     th,
     hr,
   ];
-  let unchangedLines: string[] = [];
 
   const changed = diff.changed;
   const added = diff.added;
@@ -119,13 +113,15 @@ export const formatDiffMd = (
     Object.keys(changed).length +
     Object.keys(added).length +
     Object.keys(removed).length;
+  let changedLines: string[] = [];
   if (sumChanged > 0) {
     changedLines.push(...changed);
     changedLines.push(...removed);
     changedLines.push(...added);
   }
 
-  if (Object.keys(unchanged).length > 0) {
+  let unchangedLines: string[] = [];
+  if (unchanged.length > 0) {
     unchangedLines.push(...unchanged);
   }
 
@@ -136,5 +132,7 @@ export const formatDiffMd = (
     unchangedLines = [...unchangedLinesHeader, ...unchangedLines, "</details>"];
   }
 
-  return [`### ♻️ ${heading}`, ...changedLines].concat(unchangedLines).join("\n");
+  return [`### ♻️ ${heading}`, ...changedLines]
+    .concat(unchangedLines)
+    .join("\n");
 };
