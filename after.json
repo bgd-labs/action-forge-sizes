@@ -1,0 +1,1142 @@
+{
+    "ACLManager": {
+        "runtime_size": 3493,
+        "init_size": 4108,
+        "runtime_margin": 21083,
+        "init_margin": 45044
+    },
+    "ATokenInstance": {
+        "runtime_size": 10162,
+        "init_size": 11059,
+        "runtime_margin": 14414,
+        "init_margin": 38093
+    },
+    "ATokenMock": {
+        "runtime_size": 803,
+        "init_size": 967,
+        "runtime_margin": 23773,
+        "init_margin": 48185
+    },
+    "AaveOracle": {
+        "runtime_size": 2607,
+        "init_size": 3767,
+        "runtime_margin": 21969,
+        "init_margin": 45385
+    },
+    "AaveProtocolDataProvider": {
+        "runtime_size": 9410,
+        "init_size": 9684,
+        "runtime_margin": 15166,
+        "init_margin": 39468
+    },
+    "AaveV3BatchOrchestration": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "AaveV3ConfigEngine": {
+        "runtime_size": 7396,
+        "init_size": 8988,
+        "runtime_margin": 17180,
+        "init_margin": 40164
+    },
+    "AaveV3DefaultRateStrategyProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3GettersBatchOne": {
+        "runtime_size": 229,
+        "init_size": 32307,
+        "runtime_margin": 24347,
+        "init_margin": 16845
+    },
+    "AaveV3GettersBatchTwo": {
+        "runtime_size": 137,
+        "init_size": 11156,
+        "runtime_margin": 24439,
+        "init_margin": 37996
+    },
+    "AaveV3GettersProcedureOne": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3GettersProcedureTwo": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3HelpersBatchOne": {
+        "runtime_size": 353,
+        "init_size": 33396,
+        "runtime_margin": 24223,
+        "init_margin": 15756
+    },
+    "AaveV3HelpersBatchTwo": {
+        "runtime_size": 229,
+        "init_size": 31387,
+        "runtime_margin": 24347,
+        "init_margin": 17765
+    },
+    "AaveV3HelpersProcedureOne": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3HelpersProcedureTwo": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3IncentiveProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3L2PoolBatch": {
+        "runtime_size": 137,
+        "init_size": 43892,
+        "runtime_margin": 24439,
+        "init_margin": 5260
+    },
+    "AaveV3L2PoolProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3LibrariesBatch1": {
+        "runtime_size": 353,
+        "init_size": 31276,
+        "runtime_margin": 24223,
+        "init_margin": 17876
+    },
+    "AaveV3LibrariesBatch2": {
+        "runtime_size": 353,
+        "init_size": 41544,
+        "runtime_margin": 24223,
+        "init_margin": 7608
+    },
+    "AaveV3MiscBatch": {
+        "runtime_size": 137,
+        "init_size": 6833,
+        "runtime_margin": 24439,
+        "init_margin": 42319
+    },
+    "AaveV3MiscProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3MockAssetEModeUpdate": {
+        "runtime_size": 3309,
+        "init_size": 3538,
+        "runtime_margin": 21267,
+        "init_margin": 45614
+    },
+    "AaveV3MockBorrowUpdate": {
+        "runtime_size": 3189,
+        "init_size": 3380,
+        "runtime_margin": 21387,
+        "init_margin": 45772
+    },
+    "AaveV3MockBorrowUpdateNoChange": {
+        "runtime_size": 3219,
+        "init_size": 3410,
+        "runtime_margin": 21357,
+        "init_margin": 45742
+    },
+    "AaveV3MockCapUpdate": {
+        "runtime_size": 3133,
+        "init_size": 3324,
+        "runtime_margin": 21443,
+        "init_margin": 45828
+    },
+    "AaveV3MockCollateralUpdate": {
+        "runtime_size": 3193,
+        "init_size": 3384,
+        "runtime_margin": 21383,
+        "init_margin": 45768
+    },
+    "AaveV3MockCollateralUpdateCorrectBonus": {
+        "runtime_size": 3193,
+        "init_size": 3384,
+        "runtime_margin": 21383,
+        "init_margin": 45768
+    },
+    "AaveV3MockCollateralUpdateNoChange": {
+        "runtime_size": 3220,
+        "init_size": 3411,
+        "runtime_margin": 21356,
+        "init_margin": 45741
+    },
+    "AaveV3MockCollateralUpdateWrongBonus": {
+        "runtime_size": 3197,
+        "init_size": 3388,
+        "runtime_margin": 21379,
+        "init_margin": 45764
+    },
+    "AaveV3MockEModeCategoryUpdate": {
+        "runtime_size": 3049,
+        "init_size": 3187,
+        "runtime_margin": 21527,
+        "init_margin": 45965
+    },
+    "AaveV3MockEModeCategoryUpdateEdgeBonus": {
+        "runtime_size": 3052,
+        "init_size": 3190,
+        "runtime_margin": 21524,
+        "init_margin": 45962
+    },
+    "AaveV3MockEModeCategoryUpdateNoChange": {
+        "runtime_size": 3120,
+        "init_size": 3258,
+        "runtime_margin": 21456,
+        "init_margin": 45894
+    },
+    "AaveV3MockListing": {
+        "runtime_size": 3488,
+        "init_size": 3717,
+        "runtime_margin": 21088,
+        "init_margin": 45435
+    },
+    "AaveV3MockListingCustom": {
+        "runtime_size": 3781,
+        "init_size": 4093,
+        "runtime_margin": 20795,
+        "init_margin": 45059
+    },
+    "AaveV3MockPriceFeedUpdate": {
+        "runtime_size": 3159,
+        "init_size": 3388,
+        "runtime_margin": 21417,
+        "init_margin": 45764
+    },
+    "AaveV3MockRatesUpdate": {
+        "runtime_size": 3152,
+        "init_size": 3343,
+        "runtime_margin": 21424,
+        "init_margin": 45809
+    },
+    "AaveV3OracleProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3ParaswapBatch": {
+        "runtime_size": 189,
+        "init_size": 30398,
+        "runtime_margin": 24387,
+        "init_margin": 18754
+    },
+    "AaveV3ParaswapProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3PeripheryBatch": {
+        "runtime_size": 292,
+        "init_size": 37942,
+        "runtime_margin": 24284,
+        "init_margin": 11210
+    },
+    "AaveV3PoolBatch": {
+        "runtime_size": 137,
+        "init_size": 42645,
+        "runtime_margin": 24439,
+        "init_margin": 6507
+    },
+    "AaveV3PoolConfigProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3PoolProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3SetupBatch": {
+        "runtime_size": 11610,
+        "init_size": 24899,
+        "runtime_margin": 12966,
+        "init_margin": 24253
+    },
+    "AaveV3SetupProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3TestListing": {
+        "runtime_size": 4867,
+        "init_size": 12284,
+        "runtime_margin": 19709,
+        "init_margin": 36868
+    },
+    "AaveV3TokensBatch": {
+        "runtime_size": 137,
+        "init_size": 20323,
+        "runtime_margin": 24439,
+        "init_margin": 28829
+    },
+    "AaveV3TokensProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "AaveV3TreasuryProcedure": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "Address": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "AdminUpgradeabilityProxy": {
+        "runtime_size": 1544,
+        "init_size": 2502,
+        "runtime_margin": 23032,
+        "init_margin": 46650
+    },
+    "AugustusRegistryMock": {
+        "runtime_size": 162,
+        "init_size": 190,
+        "runtime_margin": 24414,
+        "init_margin": 48962
+    },
+    "BaseAdminUpgradeabilityProxy": {
+        "runtime_size": 1536,
+        "init_size": 1565,
+        "runtime_margin": 23040,
+        "init_margin": 47587
+    },
+    "BaseImmutableAdminUpgradeabilityProxy": {
+        "runtime_size": 1302,
+        "init_size": 1469,
+        "runtime_margin": 23274,
+        "init_margin": 47683
+    },
+    "BaseUpgradeabilityProxy": {
+        "runtime_size": 108,
+        "init_size": 135,
+        "runtime_margin": 24468,
+        "init_margin": 49017
+    },
+    "BorrowEngine": {
+        "runtime_size": 2486,
+        "init_size": 2539,
+        "runtime_margin": 22090,
+        "init_margin": 46613
+    },
+    "BorrowLogic": {
+        "runtime_size": 12406,
+        "init_size": 12459,
+        "runtime_margin": 12170,
+        "init_margin": 36693
+    },
+    "BridgeLogic": {
+        "runtime_size": 6712,
+        "init_size": 6765,
+        "runtime_margin": 17864,
+        "init_margin": 42387
+    },
+    "CalldataLogic": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "CapsEngine": {
+        "runtime_size": 1136,
+        "init_size": 1189,
+        "runtime_margin": 23440,
+        "init_margin": 47963
+    },
+    "CollateralEngine": {
+        "runtime_size": 2691,
+        "init_size": 2744,
+        "runtime_margin": 21885,
+        "init_margin": 46408
+    },
+    "Collector": {
+        "runtime_size": 6825,
+        "init_size": 6862,
+        "runtime_margin": 17751,
+        "init_margin": 42290
+    },
+    "ConfiguratorInputTypes": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "ConfiguratorLogic": {
+        "runtime_size": 6539,
+        "init_size": 6592,
+        "runtime_margin": 18037,
+        "init_margin": 42560
+    },
+    "Create2Utils": {
+        "runtime_size": 121,
+        "init_size": 172,
+        "runtime_margin": 24455,
+        "init_margin": 48980
+    },
+    "DataTypes": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "DefaultMarketInput": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "DefaultReserveInterestRateStrategyV2": {
+        "runtime_size": 3998,
+        "init_size": 4293,
+        "runtime_margin": 20578,
+        "init_margin": 44859
+    },
+    "DeployUtils": {
+        "runtime_size": 913,
+        "init_size": 942,
+        "runtime_margin": 23663,
+        "init_margin": 48210
+    },
+    "ECDSA": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "EIP712SigUtils": {
+        "runtime_size": 1563,
+        "init_size": 1616,
+        "runtime_margin": 23013,
+        "init_margin": 47536
+    },
+    "EModeConfiguration": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "EModeEngine": {
+        "runtime_size": 4384,
+        "init_size": 4437,
+        "runtime_margin": 20192,
+        "init_margin": 44715
+    },
+    "EModeLogic": {
+        "runtime_size": 3757,
+        "init_size": 3810,
+        "runtime_margin": 20819,
+        "init_margin": 45342
+    },
+    "ERC1967Proxy": {
+        "runtime_size": 122,
+        "init_size": 967,
+        "runtime_margin": 24454,
+        "init_margin": 48185
+    },
+    "ERC1967Utils": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "ERC20": {
+        "runtime_size": 2086,
+        "init_size": 2839,
+        "runtime_margin": 22490,
+        "init_margin": 46313
+    },
+    "EmissionManager": {
+        "runtime_size": 3398,
+        "init_size": 3859,
+        "runtime_margin": 21178,
+        "init_margin": 45293
+    },
+    "EngineFlags": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "Errors": {
+        "runtime_size": 4465,
+        "init_size": 4518,
+        "runtime_margin": 20111,
+        "init_margin": 44634
+    },
+    "Faucet": {
+        "runtime_size": 2033,
+        "init_size": 2565,
+        "runtime_margin": 22543,
+        "init_margin": 46587
+    },
+    "FlashLoanLogic": {
+        "runtime_size": 9469,
+        "init_size": 9522,
+        "runtime_margin": 15107,
+        "init_margin": 39630
+    },
+    "FlashloanAttacker": {
+        "runtime_size": 2123,
+        "init_size": 2547,
+        "runtime_margin": 22453,
+        "init_margin": 46605
+    },
+    "GPv2SafeERC20": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "GenericLogic": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "Initializable": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "InitializableAdminUpgradeabilityProxy": {
+        "runtime_size": 2388,
+        "init_size": 2417,
+        "runtime_margin": 22188,
+        "init_margin": 46735
+    },
+    "InitializableImmutableAdminUpgradeabilityProxy": {
+        "runtime_size": 1853,
+        "init_size": 2020,
+        "runtime_margin": 22723,
+        "init_margin": 47132
+    },
+    "InitializableUpgradeabilityProxy": {
+        "runtime_size": 871,
+        "init_size": 900,
+        "runtime_margin": 23705,
+        "init_margin": 48252
+    },
+    "IsolationModeLogic": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "L2Encoder": {
+        "runtime_size": 3731,
+        "init_size": 3926,
+        "runtime_margin": 20845,
+        "init_margin": 45226
+    },
+    "L2PoolInstance": {
+        "runtime_size": 23257,
+        "init_size": 23506,
+        "runtime_margin": 1319,
+        "init_margin": 25646
+    },
+    "LiquidationLogic": {
+        "runtime_size": 11788,
+        "init_size": 11841,
+        "runtime_margin": 12788,
+        "init_margin": 37311
+    },
+    "ListingEngine": {
+        "runtime_size": 6967,
+        "init_size": 7020,
+        "runtime_margin": 17609,
+        "init_margin": 42132
+    },
+    "MarketReportUtils": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "Math": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "MathUtils": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "MathUtilsWrapper": {
+        "runtime_size": 917,
+        "init_size": 946,
+        "runtime_margin": 23659,
+        "init_margin": 48206
+    },
+    "MessageHashUtils": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "MetadataReporter": {
+        "runtime_size": 12072,
+        "init_size": 12101,
+        "runtime_margin": 12504,
+        "init_margin": 37051
+    },
+    "MintableDelegationERC20": {
+        "runtime_size": 2534,
+        "init_size": 3319,
+        "runtime_margin": 22042,
+        "init_margin": 45833
+    },
+    "MintableERC20": {
+        "runtime_size": 3351,
+        "init_size": 4300,
+        "runtime_margin": 21225,
+        "init_margin": 44852
+    },
+    "Mock": {
+        "runtime_size": 183,
+        "init_size": 211,
+        "runtime_margin": 24393,
+        "init_margin": 48941
+    },
+    "MockAToken": {
+        "runtime_size": 10164,
+        "init_size": 11063,
+        "runtime_margin": 14412,
+        "init_margin": 38089
+    },
+    "MockATokenRepayment": {
+        "runtime_size": 10245,
+        "init_size": 11144,
+        "runtime_margin": 14331,
+        "init_margin": 38008
+    },
+    "MockAggregator": {
+        "runtime_size": 134,
+        "init_size": 278,
+        "runtime_margin": 24442,
+        "init_margin": 48874
+    },
+    "MockBadTransferStrategy": {
+        "runtime_size": 998,
+        "init_size": 1187,
+        "runtime_margin": 23578,
+        "init_margin": 47965
+    },
+    "MockERC20AaveLMUpgradeable": {
+        "runtime_size": 7932,
+        "init_size": 8150,
+        "runtime_margin": 16644,
+        "init_margin": 41002
+    },
+    "MockERC4626StataTokenUpgradeable": {
+        "runtime_size": 9500,
+        "init_size": 9856,
+        "runtime_margin": 15076,
+        "init_margin": 39296
+    },
+    "MockFlashLoanATokenReceiver": {
+        "runtime_size": 2396,
+        "init_size": 2774,
+        "runtime_margin": 22180,
+        "init_margin": 46378
+    },
+    "MockFlashLoanReceiver": {
+        "runtime_size": 2216,
+        "init_size": 2501,
+        "runtime_margin": 22360,
+        "init_margin": 46651
+    },
+    "MockFlashLoanSimpleReceiver": {
+        "runtime_size": 1476,
+        "init_size": 1761,
+        "runtime_margin": 23100,
+        "init_margin": 47391
+    },
+    "MockIncentivesController": {
+        "runtime_size": 132,
+        "init_size": 159,
+        "runtime_margin": 24444,
+        "init_margin": 48993
+    },
+    "MockInitializableFromConstructorImple": {
+        "runtime_size": 349,
+        "init_size": 639,
+        "runtime_margin": 24227,
+        "init_margin": 48513
+    },
+    "MockInitializableImple": {
+        "runtime_size": 1544,
+        "init_size": 1576,
+        "runtime_margin": 23032,
+        "init_margin": 47576
+    },
+    "MockInitializableImpleV2": {
+        "runtime_size": 1546,
+        "init_size": 1578,
+        "runtime_margin": 23030,
+        "init_margin": 47574
+    },
+    "MockInitializableV1": {
+        "runtime_size": 307,
+        "init_size": 339,
+        "runtime_margin": 24269,
+        "init_margin": 48813
+    },
+    "MockInitializableV2": {
+        "runtime_size": 309,
+        "init_size": 341,
+        "runtime_margin": 24267,
+        "init_margin": 48811
+    },
+    "MockL2Pool": {
+        "runtime_size": 23284,
+        "init_size": 23533,
+        "runtime_margin": 1292,
+        "init_margin": 25619
+    },
+    "MockParaSwapAugustus": {
+        "runtime_size": 2133,
+        "init_size": 3253,
+        "runtime_margin": 22443,
+        "init_margin": 45899
+    },
+    "MockParaSwapAugustusRegistry": {
+        "runtime_size": 179,
+        "init_size": 308,
+        "runtime_margin": 24397,
+        "init_margin": 48844
+    },
+    "MockParaSwapTokenTransferProxy": {
+        "runtime_size": 905,
+        "init_size": 998,
+        "runtime_margin": 23671,
+        "init_margin": 48154
+    },
+    "MockPeripheryContractV1": {
+        "runtime_size": 309,
+        "init_size": 338,
+        "runtime_margin": 24267,
+        "init_margin": 48814
+    },
+    "MockPeripheryContractV2": {
+        "runtime_size": 290,
+        "init_size": 319,
+        "runtime_margin": 24286,
+        "init_margin": 48833
+    },
+    "MockPoolInherited": {
+        "runtime_size": 22199,
+        "init_size": 22475,
+        "runtime_margin": 2377,
+        "init_margin": 26677
+    },
+    "MockReentrantInitializableImple": {
+        "runtime_size": 413,
+        "init_size": 445,
+        "runtime_margin": 24163,
+        "init_margin": 48707
+    },
+    "MockReserveConfiguration": {
+        "runtime_size": 2652,
+        "init_size": 2681,
+        "runtime_margin": 21924,
+        "init_margin": 46471
+    },
+    "MockReserveInterestRateStrategy": {
+        "runtime_size": 3315,
+        "init_size": 3614,
+        "runtime_margin": 21261,
+        "init_margin": 45538
+    },
+    "MockScaledTestnetERC20": {
+        "runtime_size": 4101,
+        "init_size": 5529,
+        "runtime_margin": 20475,
+        "init_margin": 43623
+    },
+    "MockScaledToken": {
+        "runtime_size": 3999,
+        "init_size": 4761,
+        "runtime_margin": 20577,
+        "init_margin": 44391
+    },
+    "MockVariableDebtToken": {
+        "runtime_size": 7280,
+        "init_size": 8163,
+        "runtime_margin": 17296,
+        "init_margin": 40989
+    },
+    "Ownable": {
+        "runtime_size": 629,
+        "init_size": 722,
+        "runtime_margin": 23947,
+        "init_margin": 48430
+    },
+    "Panic": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "ParaSwapLiquiditySwapAdapter": {
+        "runtime_size": 8733,
+        "init_size": 9850,
+        "runtime_margin": 15843,
+        "init_margin": 39302
+    },
+    "ParaSwapRepayAdapter": {
+        "runtime_size": 9320,
+        "init_size": 10527,
+        "runtime_margin": 15256,
+        "init_margin": 38625
+    },
+    "ParaSwapWithdrawSwapAdapter": {
+        "runtime_size": 7397,
+        "init_size": 8451,
+        "runtime_margin": 17179,
+        "init_margin": 40701
+    },
+    "PercentageMath": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "PercentageMathWrapper": {
+        "runtime_size": 297,
+        "init_size": 326,
+        "runtime_margin": 24279,
+        "init_margin": 48826
+    },
+    "PoolAddressesProvider": {
+        "runtime_size": 6696,
+        "init_size": 8050,
+        "runtime_margin": 17880,
+        "init_margin": 41102
+    },
+    "PoolAddressesProviderRegistry": {
+        "runtime_size": 2149,
+        "init_size": 2610,
+        "runtime_margin": 22427,
+        "init_margin": 46542
+    },
+    "PoolConfiguratorInstance": {
+        "runtime_size": 19728,
+        "init_size": 19760,
+        "runtime_margin": 4848,
+        "init_margin": 29392
+    },
+    "PoolInstance": {
+        "runtime_size": 22010,
+        "init_size": 22259,
+        "runtime_margin": 2566,
+        "init_margin": 26893
+    },
+    "PoolLogic": {
+        "runtime_size": 6748,
+        "init_size": 6801,
+        "runtime_margin": 17828,
+        "init_margin": 42351
+    },
+    "PoolStorage": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "PriceFeedEngine": {
+        "runtime_size": 1531,
+        "init_size": 1584,
+        "runtime_margin": 23045,
+        "init_margin": 47568
+    },
+    "PriceOracle": {
+        "runtime_size": 469,
+        "init_size": 498,
+        "runtime_margin": 24107,
+        "init_margin": 48654
+    },
+    "PriceOracleSentinel": {
+        "runtime_size": 1669,
+        "init_size": 1885,
+        "runtime_margin": 22907,
+        "init_margin": 47267
+    },
+    "ProxyAdmin": {
+        "runtime_size": 990,
+        "init_size": 1235,
+        "runtime_margin": 23586,
+        "init_margin": 47917
+    },
+    "ProxyHelpers": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "PullRewardsTransferStrategy": {
+        "runtime_size": 1255,
+        "init_size": 1481,
+        "runtime_margin": 23321,
+        "init_margin": 47671
+    },
+    "RateEngine": {
+        "runtime_size": 2297,
+        "init_size": 2350,
+        "runtime_margin": 22279,
+        "init_margin": 46802
+    },
+    "ReserveConfiguration": {
+        "runtime_size": 128,
+        "init_size": 179,
+        "runtime_margin": 24448,
+        "init_margin": 48973
+    },
+    "ReserveLogic": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "RevenueSplitter": {
+        "runtime_size": 1942,
+        "init_size": 2259,
+        "runtime_margin": 22634,
+        "init_margin": 46893
+    },
+    "RewardsController": {
+        "runtime_size": 14067,
+        "init_size": 14261,
+        "runtime_margin": 10509,
+        "init_margin": 34891
+    },
+    "RewardsDataTypes": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "SafeCast": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "SafeERC20": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "SafeMath": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "SequencerOracle": {
+        "runtime_size": 865,
+        "init_size": 1326,
+        "runtime_margin": 23711,
+        "init_margin": 47826
+    },
+    "SigUtils": {
+        "runtime_size": 492,
+        "init_size": 545,
+        "runtime_margin": 24084,
+        "init_margin": 48607
+    },
+    "SignedMath": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "SlotParser": {
+        "runtime_size": 330,
+        "init_size": 383,
+        "runtime_margin": 24246,
+        "init_margin": 48769
+    },
+    "StakeMock": {
+        "runtime_size": 355,
+        "init_size": 384,
+        "runtime_margin": 24221,
+        "init_margin": 48768
+    },
+    "StakedTokenTransferStrategy": {
+        "runtime_size": 2060,
+        "init_size": 2770,
+        "runtime_margin": 22516,
+        "init_margin": 46382
+    },
+    "StataTokenFactory": {
+        "runtime_size": 3489,
+        "init_size": 3762,
+        "runtime_margin": 21087,
+        "init_margin": 45390
+    },
+    "StataTokenV2": {
+        "runtime_size": 18929,
+        "init_size": 19631,
+        "runtime_margin": 5647,
+        "init_margin": 29521
+    },
+    "StorageSlot": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "Strings": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "SupplyLogic": {
+        "runtime_size": 11680,
+        "init_size": 11733,
+        "runtime_margin": 12896,
+        "init_margin": 37419
+    },
+    "TestnetERC20": {
+        "runtime_size": 3981,
+        "init_size": 5401,
+        "runtime_margin": 20595,
+        "init_margin": 43751
+    },
+    "TransparentProxyFactory": {
+        "runtime_size": 6830,
+        "init_size": 6859,
+        "runtime_margin": 17746,
+        "init_margin": 42293
+    },
+    "TransparentUpgradeableProxy": {
+        "runtime_size": 1088,
+        "init_size": 3582,
+        "runtime_margin": 23488,
+        "init_margin": 45570
+    },
+    "UiIncentiveDataProviderV3": {
+        "runtime_size": 9046,
+        "init_size": 9075,
+        "runtime_margin": 15530,
+        "init_margin": 40077
+    },
+    "UiPoolDataProviderV3": {
+        "runtime_size": 9859,
+        "init_size": 10070,
+        "runtime_margin": 14717,
+        "init_margin": 39082
+    },
+    "UpgradeabilityProxy": {
+        "runtime_size": 108,
+        "init_size": 855,
+        "runtime_margin": 24468,
+        "init_margin": 48297
+    },
+    "UserConfiguration": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "ValidationLogic": {
+        "runtime_size": 189,
+        "init_size": 241,
+        "runtime_margin": 24387,
+        "init_margin": 48911
+    },
+    "VariableDebtTokenHarness": {
+        "runtime_size": 7296,
+        "init_size": 8179,
+        "runtime_margin": 17280,
+        "init_margin": 40973
+    },
+    "VariableDebtTokenInstance": {
+        "runtime_size": 7278,
+        "init_size": 8159,
+        "runtime_margin": 17298,
+        "init_margin": 40993
+    },
+    "WETH9": {
+        "runtime_size": 1886,
+        "init_size": 2357,
+        "runtime_margin": 22690,
+        "init_margin": 46795
+    },
+    "WETH9Mock": {
+        "runtime_size": 2641,
+        "init_size": 3875,
+        "runtime_margin": 21935,
+        "init_margin": 45277
+    },
+    "WETH9Mocked": {
+        "runtime_size": 2192,
+        "init_size": 2663,
+        "runtime_margin": 22384,
+        "init_margin": 46489
+    },
+    "WadRayMath": {
+        "runtime_size": 44,
+        "init_size": 94,
+        "runtime_margin": 24532,
+        "init_margin": 49058
+    },
+    "WadRayMathWrapper": {
+        "runtime_size": 816,
+        "init_size": 845,
+        "runtime_margin": 23760,
+        "init_margin": 48307
+    },
+    "WalletBalanceProvider": {
+        "runtime_size": 2557,
+        "init_size": 2586,
+        "runtime_margin": 22019,
+        "init_margin": 46566
+    },
+    "WalletMock": {
+        "runtime_size": 21,
+        "init_size": 47,
+        "runtime_margin": 24555,
+        "init_margin": 49105
+    },
+    "WrappedTokenGatewayV3": {
+        "runtime_size": 5722,
+        "init_size": 6600,
+        "runtime_margin": 18854,
+        "init_margin": 42552
+    }
+}

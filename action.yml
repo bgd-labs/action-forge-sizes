@@ -1,0 +1,30 @@
+name: "forge-sizes"
+description: "Generates a report about changes in `forge build --sizes --json` outputs"
+inputs:
+  heading: 
+    description: "The heading to use for the report."
+    required: false
+    default: "Forge Build Sizes"
+  base-report-path: 
+    description: "The path of the base json report."
+    required: true
+  report-path:
+    description: "The path of the updated json report."
+    required: true
+  token:
+    description: "The GitHub token to use for posting the report comment."
+    required: false
+    default: ${{ github.token }}
+  comment:
+    description: "Whether to post the report as a comment."
+    required: false
+    default: "true"
+
+
+outputs:
+  report:
+    description: "The report"
+
+runs:
+  using: "node20"
+  main: dist/action.js
