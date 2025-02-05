@@ -78,7 +78,7 @@ export function snapshotDiff({
 }
 
 export const formatDiffMd = (
-  heading: string,
+  header: string[],
   diff: ReturnType<typeof snapshotDiff>,
 ) => {
   const br = "";
@@ -132,7 +132,7 @@ export const formatDiffMd = (
     unchangedLines = [...unchangedLinesHeader, ...unchangedLines, "</details>"];
   }
 
-  return [`### ♻️ ${heading}`, ...changedLines]
+  return [...header, ...changedLines]
     .concat(unchangedLines)
     .join("\n");
 };

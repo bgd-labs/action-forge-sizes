@@ -35,15 +35,15 @@ const createOrUpdateComment = async (_body: string) => {
   }
 };
 
-const reportValidator = z.record(
+const reportValidator = z.preprocess((v) => JSON.parse(v as string), z.record(
   z.string(),
   z.object({
     runtime_size: z.preprocess((v) => Number(v), z.number().int().positive()),
     init_size: z.preprocess((v) => Number(v), z.number().int().positive()),
     runtime_margin: z.preprocess((v) => Number(v), z.number().int()),
     init_margin: z.preprocess((v) => Number(v), z.number().int()),
-  })
-);
+  }),
+));
 
 export type Report = z.infer<typeof reportValidator>;
 
@@ -53,7 +53,17 @@ const run = async () => {
   const reportFile = await readFile(reportPath, "utf8");
   const before = reportValidator.parse(baseReportFile);
   const after = reportValidator.parse(reportFile);
-  const negativeContracts = Object.entries(after).filter(([contact, content]) => Object.values(content).some(value => value < 0)).map(([contract]) => contract);
+  const header = [`### ${heading}`];
+  const negativeContracts = Object.entries(after)
+    .filter(([_contact, content]) =>
+      Object.values(content).some((value) => value < 0),
+    )
+    .map(([contract]) => contract);
+  if (negativeContracts[0])
+    header.push(
+      "",
+      `⚠️🤯🔫 **Code-size exceeded: ${negativeContracts.map((contract) => `"${contract}"`).join(", ")}.**`,
+    );
 
   debug(`Before: ${JSON.stringify(before)}`);
   debug(`After: ${JSON.stringify(after)}`);
@@ -64,7 +74,7 @@ const run = async () => {
   });
 
   debug(`Diff: ${JSON.stringify(diff)}`);
-  const output = formatDiffMd(heading, diff);
+  const output = formatDiffMd(header, diff);
 
   if (shouldComment) await createOrUpdateComment(output);
 
@@ -73,7 +83,9 @@ const run = async () => {
   setOutput("report", output);
 
   if (negativeContracts[0]) {
-    setFailed(`Allowed build-size exceeded for contract(s) ${negativeContracts.map(contract => `"${contract}"`).join(", ")}.`);
+    setFailed(
+      `Allowed code-size exceeded for contract(s): ${negativeContracts.map((contract) => `"${contract}"`).join(", ")}.`,
+    );
   }
 };
 
