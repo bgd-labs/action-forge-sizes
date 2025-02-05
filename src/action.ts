@@ -35,7 +35,7 @@ const createOrUpdateComment = async (_body: string) => {
   }
 };
 
-const reportValidator = z.preprocess(v => JSON.parse(v as string), z.record(
+const reportValidator = z.record(
   z.string(),
   z.object({
     runtime_size: z.preprocess((v) => Number(v), z.number().int().positive()),
@@ -43,7 +43,7 @@ const reportValidator = z.preprocess(v => JSON.parse(v as string), z.record(
     runtime_margin: z.preprocess((v) => Number(v), z.number().int()),
     init_margin: z.preprocess((v) => Number(v), z.number().int()),
   })
-));
+);
 
 export type Report = z.infer<typeof reportValidator>;
 
