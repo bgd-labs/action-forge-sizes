@@ -1,12 +1,8 @@
+import { Report } from "./action";
 import { compareObjects } from "./compareObjects";
 import md, { formatNumber } from "./md";
 
-type FileReport = {
-  runtime_size: number;
-  init_size: number;
-  runtime_margin: number;
-  init_margin: number;
-};
+type FileReport = Report[string]
 type Verdict = Record<keyof FileReport | "key", string | number>;
 type Snapshot = Record<string, FileReport>;
 

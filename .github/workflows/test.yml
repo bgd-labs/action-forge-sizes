@@ -9,9 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # pin@v4.2.2
-      - name: test action
-        id: forge
+      - name: test action (success)
+        id: forge_succeeds
+        uses: ./
+        with:
+          base-report-path: before.json
+          report-path: before.json
+          heading: "Self-test"
+      - name: test action (fail)
+        id: forge_fails
         uses: ./
         with:
           base-report-path: before.json
           report-path: after.json
+      - name: Runs anyway
+        if: always()
+        run: |
+          echo "Runs anyway"
+          echo "${{ steps.forge_fails.outputs.report }}"
