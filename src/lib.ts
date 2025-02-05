@@ -32,7 +32,7 @@ export function snapshotDiff({
 
   compareObjects(before, after, {
     onAdded: (key, _before, after) => {
-      added.push(md.formatLine(verdictToArray({ key: `+${key}`, ...after })));
+      added.push(md.formatLine(verdictToArray({ key: `**${key}**`, ...after })));
     },
     onChanged: (key, before, after) => {
       const verdict = Object.keys(after ?? {}).reduce<Verdict>(
@@ -57,17 +57,17 @@ export function snapshotDiff({
         },
         {
           ...after,
-          key: `~${key}`,
+          key,
         }
       );
       changed.push(md.formatLine(verdictToArray(verdict)));
     },
     onRemoved: (key, before, _after) => {
       removed.push(
-        md.formatLine(verdictToArray({ key: `-${key}`, ...before }))
+        md.formatLine(verdictToArray({ key: `~${key}~`, ...before }))
       );
     },
-    onUnchanged: (key, before, after) => {
+    onUnchanged: (key, before, _after) => {
       unchanged.push(md.formatLine(verdictToArray({ key, ...before })));
     },
   });
@@ -84,19 +84,20 @@ export const formatDiffMd = (
   heading: string,
   diff: ReturnType<typeof snapshotDiff>
 ) => {
-  const th = "| Path | Value |";
-  const hr = "| --- | ---: |";
   const br = "";
+  const th = md.th([
+    "Contract",
+    "Runtime Size (B)",
+    "Initcode Size (B)",
+    "Runtime Margin (B)",
+    "Initcode Margin (B)",
+  ])
+  const hr = md.hr(Array.from({ length: 5 }, (_, index) => ({
+    dir: index === 0 ? "left" : "right",
+  })));
 
   const changedLinesHeader: string[] = [
-    `### ♻️ ${heading}`,
-    md.th([
-      "Contract",
-      "Runtime Size (B)",
-      "Initcode Size (B)",
-      "Runtime Margin (B)",
-      "Initcode Margin (B)",
-    ]),
+    th,
     hr,
   ];
   let changedLines: string[] = [];
@@ -135,5 +136,5 @@ export const formatDiffMd = (
     unchangedLines = [...unchangedLinesHeader, ...unchangedLines, "</details>"];
   }
 
-  return changedLines.concat(unchangedLines).join("\n");
+  return [`### ♻️ ${heading}`, ...changedLines].concat(unchangedLines).join("\n");
 };

@@ -1,10 +1,4 @@
 {
-    "ACLManager": {
-        "runtime_size": 3493,
-        "init_size": 4108,
-        "runtime_margin": 21083,
-        "init_margin": 45044
-    },
     "ATokenInstance": {
         "runtime_size": 10162,
         "init_size": 11059,
@@ -21,13 +15,13 @@
         "runtime_size": 2607,
         "init_size": 3767,
         "runtime_margin": 21969,
-        "init_margin": 45385
+        "init_margin": 95385
     },
     "AaveProtocolDataProvider": {
         "runtime_size": 9410,
         "init_size": 9684,
-        "runtime_margin": 15166,
-        "init_margin": 39468
+        "runtime_margin": 16166,
+        "init_margin": 31468
     },
     "AaveV3BatchOrchestration": {
         "runtime_size": 44,
@@ -36,8 +30,8 @@
         "init_margin": 49058
     },
     "AaveV3ConfigEngine": {
-        "runtime_size": 7396,
-        "init_size": 8988,
+        "runtime_size": 3396,
+        "init_size": 10988,
         "runtime_margin": 17180,
         "init_margin": 40164
     },
